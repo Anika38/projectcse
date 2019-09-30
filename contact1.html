@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DECORILLA-contactpage</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style1.css">
+      <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger">Start </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="ab.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="subscribe.html" id="login">Login</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#" id="logout" onclick="logout_func()">Logout</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="serviceshome.html">Home Decor</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="servicesoff.html">Office Decor</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="contact1.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Contact</h1>
+      <h3 class="mb-5">
+
+      </h3>
+     
+    </div>
+    <div class="overlay"></div>
+  </header>
+  <p>
+  </p>
+  <p>
+  </p>
+  <br>
+  </br>
+  
+  <div class="container">
+   
+    <div class="wrapper">
+      <div class="company-info">
+       
+        <ul>
+          <li><i class="fa fa-road"></i><b> 44 Gulshan</b></li>
+          <li><i class="fa fa-phone"></i><b> 01829023</b></li>
+          <li><i class="fa fa-envelope"></i><b> anika@acme.test</b></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent, Redirecting to Home</div>
+        <form id="contactForm">
+          <p>
+            <label for="address" class="input-lbl">First Name</label>
+            <input type="text" name="name" id="name" class="input-txt" required>
+          </p>
+          <p>
+            <label for="address" class="input-lbl">Last name</label>
+            <input type="text" name="last name" id="company" class="input-txt">
+          </p>
+          <p>
+            <label for="address" class="input-lbl">Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label for="address" class="input-lbl">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="input-txt">
+          </p>
+          <p class="full" for="address">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message" class="input-txt"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" onclick="addPlace()">Submit</button>
+			 <button  onclick="resetForm()">RESET</button>
+		 </p>
+		 <p>
+		  <label for="address" class="input-lbl">
+			<a <b href="retreive.html"  style="float:left">load messages </b></a>
+			</label>
+			
+          </p>
+        </form>
+      </div>
+	 
+    </div>
+  </div>
+ 
+  </section>
+  <br>
+  </br>
+  
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <div id="tour-places-div">
+        <table class="tablePlace" id="table-places">
+            <thead>
+                <tr>
+                    <th class="name-col name-col-header">NAME</th>
+					 <th class="company-col name-col-header">company</th>
+					 <th class="email-col ">Email</th>
+					 <th class="phone-col">Phone</th>
+					
+					
+					
+                    <th class="message-col">Messages</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="table-places-tbody">
+                
+            </tbody>
+
+        </table>
+        <input type="button" value="back to contact page" class="backButton" onclick="BackToaddPlace()">
+    </div>
+	<p> </p>
+	<p> </p>
+
+  <!-- Scroll to Top Button-->
+  
+	<p> </p>
+	<p> </p>
+	<p> </p>
+	<p> </p>
+
+	
+  
+  
+  
+  
+<footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/Decorilla/">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/Decorilla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="href="https://www.linkedin.com/company/decorilla/"">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright DECORILLA 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+  <script src="auth.js"></script>
+  <script src="main1.js"></script>
+   
+
+</body>
+
+</html>

@@ -15,6 +15,11 @@
   //db.settings({timestampsInSnapshots:true});
 
 
+
+	const signupForm = document.querySelector('#signup-form');
+  
+
+
 window.onload=function(){
 	const signupForm = document.querySelector('#signup-form');
   
@@ -36,19 +41,43 @@ signupForm.addEventListener('submit', (e) => {
 }
 
 
-function login(){
 
-  var userEmail = document.getElementById("inputEmail").value;
-  var userPass = document.getElementById("inputPassword").value;
+function login_func(){
+	const signupForm=document.querySelector('#signup-form');
+signupForm.addEventListener('submit',(e) => {
+	e.preventDefault();
+	
+	const email  =signupForm['inputEmail'].value;
+	const passward  =signupForm['inputPassword'].value;
+	//signup the user
+	
+	auth.createUserWithEmailAndPassword(email,passward).then(cred => {
+		//console.log(cred.user);
+		const modal= document.querySelector('#modal-signup');
+		//M.Modal.getInstance(modal).close();
+		signupForm.reset();
+		document.location.href = "./index.html?Signup=Successful";
+		
+});
 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(e=>{
-    document.location.href = "./index.html?Login=Successful";
-  }).catch(function(error) {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-     
-    window.alert("Error : " + errorMessage);
-  });
+});
+	
+	
+	const loginForm=document.querySelector('#login-form');
+loginForm.addEventListener('submit',(e) => {
+	e.preventDefault();
+	const email  =loginForm['inputEmail'].value;
+	const passward  =loginForm['inputPassword'].value;
+	auth.signInWithEmailAndPassword(email,passward).then(cred => {
+		console.log(cred.user);
+		const modal= document.querySelector('#modal-login');
+		//M.Modal.getInstance(modal).close();
+		loginForm.reset();
+		document.location.href = "./index.html?Login=Successful";
+
+	});
+	
+});
 }
 
 

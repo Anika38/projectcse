@@ -21,6 +21,9 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style1.css">
+  
+  <link href="css/site.css" rel="stylesheet">
+   
 
 </head>
 
@@ -39,7 +42,7 @@
         <a class="js-scroll-trigger" href="index.html">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="ab.html">About</a>
+        <a class="js-scroll-trigger" href="about.html">About</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="subscribe.html" id="login">Login</a>
@@ -70,7 +73,7 @@
     <div class="row">
 
       <!-- Post Content Column -->
-      <div class="col-lg-8">
+      <div class="col-lg-12">
 
         <!-- Title -->
         <h1 class="mt-4">Designing the spring family kitchen</h1>
@@ -121,7 +124,7 @@ I added just enough to refresh the space and now I can’t wait for spring to of
       </div>
       <div class="contact">
         <h3>COMMENT</h3>
-        <div class="alert">Your comment has been stored, Redirecting to Home</div>
+        <div class="alert">Your comment has been stored</div>
         <form id="contactForm">
           <p>
             <label for="address" class="input-lbl">First Name</label>
@@ -141,6 +144,27 @@ I added just enough to refresh the space and now I can’t wait for spring to of
   </div>
   </div>
   </div>
+  
+  
+  <section>
+
+<p>ALL comments</p>
+
+
+
+<table class="tablePlace" id="table-places">
+<thead>
+<tr>
+    <td  class="name-col name-col-header">name</td>
+	
+	<td  class="name-col name-col-header">Comment</td>
+</tr>
+</thead>
+<tbody id="table_body">
+</tbody>
+</table>
+</section>
+
   <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
@@ -181,6 +205,7 @@ I added just enough to refresh the space and now I can’t wait for spring to of
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
 
   <script src="m.js"></script>
+   <script src="ind.js"></script>
   
    
   

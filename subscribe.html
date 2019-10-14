@@ -42,7 +42,7 @@
         <a class="js-scroll-trigger" href="index.html">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="ab.html">About</a>
+        <a class="js-scroll-trigger" href="about.html">About</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="subscribe.html" id="login">Login</a>
@@ -85,7 +85,7 @@
 			  <hr class="my-4">
              <a><b>Already has an Account</b></a>
             </form>
-			  <a href="signin.html" class="btn btn-lg btn-primary btn-block text-uppercase"  type="submit">LOGIN</a>
+			  <a href="signin.html" class="btn btn-lg btn-primary btn-block text-uppercase"  type="submit">Sign in</a>
 			 
              
 			 
@@ -99,6 +99,33 @@
 <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+<script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyD1QCke2ZDp7PPIPdoeU64GAQupWMsh3rU",
+    authDomain: "contactform-d811a.firebaseapp.com",
+    databaseURL: "https://contactform-d811a.firebaseio.com",
+    projectId: "contactform-d811a",
+    storageBucket: "",
+    messagingSenderId: "1019411373002",
+    appId: "1:1019411373002:web:e72ff6049c81ea507c0d33"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth=firebase.auth();
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('modal-signup');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+   <script src="auth1.js"></script>
+   <script src="logoutax.js"></script>
 
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -112,7 +139,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
-   <script src="auth.js"></script>
+  
   
 
   </body>

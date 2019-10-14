@@ -74,7 +74,7 @@ function submitForm(e){
   //redirect to home page
 
   setTimeout(function(){
-    document.location.href="./index.html";
+    document.location.href="./retreive.html";
   },3050);
 
 
